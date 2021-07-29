@@ -1,7 +1,7 @@
 function compute()
 {
     // Test if valid amount has been entered
-    if (document.getElementById("principal").value != "") {
+    if (document.getElementById("principal").value > 0) {
         //Initialise the variables for storing user input
         var principal = document.getElementById("principal").value;
         var rate = document.getElementById("rate").value;
@@ -20,7 +20,7 @@ function compute()
         document.getElementById("result").innerHTML = result;
     }
     else {
-        alert("No principal amount has been entered yet"); //raise warning if invalid principal amount is entered
+        alert("The principal amount entered is either missing or invalid"); //raise warning if invalid principal amount is entered
         document.getElementById("principal").focus;
     }
 }
