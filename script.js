@@ -21,7 +21,7 @@ function compute()
     }
     else {
         alert("The principal amount entered is either missing or invalid"); //raise warning if invalid principal amount is entered
-        document.getElementById("principal").focus;
+        document.getElementById("principal").focus();
     }
 }
 function updateRate() {
